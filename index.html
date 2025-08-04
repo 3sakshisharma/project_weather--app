@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+<header>
+    <h1>Weather App</h1>
+    <p>Get The Current Weather of Any State</p>
+</header>
+<br>
+<br>
+<br>
+    <div class="search-section">
+        <input type="Text" class="city-input" id="cityInput" placeholder="Enter city name" />
+
+   <button id="searchBtn">Get Weather</button>
+  
+    
+ </div>
+<!-- loading section -->
+<p>Loading Weather data...</p>
+    </div>
+    <div id="loading" class="hidden">Loading...</div>
+
+
+    <div id="error"class=error hidden>
+        <p id="errorMessage"></p>
+ </div>
+
+    <div id="weatherDisplay" class="weather-display hidden">
+        <h2 id="cityName"></h2>
+
+        <div class="weather-info">
+            <div class="temperature">
+                <span id="temperature"></span>
+                <span class="unit">°C</span>
+            </div>
+            <div class="description">
+                <p id="weatherDescription"></p>
+            </div>
+        </div>
+
+        <div class="weather-details">
+            <div class="details-item">
+                <span class="label">Feels like:</span>
+                <span id="feelsLike"></span>°C
+            </div>
+            <div class="details-item">
+                <span class=" label">Humidity:</span>
+                <span id="humidity"></span>%
+            </div>
+            <div class="detail-item">
+                <span class="label">Wind speed:</span>
+                <span id="windspeed"></span>m/s
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html> 
+
+
